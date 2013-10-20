@@ -1,0 +1,309 @@
+@font-face {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Josefin Sans'), local('JosefinSans'), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v3/xgzbb53t8j-Mo-vYa23n5nhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v3/C6HYlRF50SGJq1XyXj04z3l4twXkwp3_u9ZoePkT564.woff) format('woff');
+}
+@font-face {
+	font-family: 'Josefin Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Josefin Sans Italic'), local('JosefinSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v3/q9w3H4aeBxj0hZ8Osfi3d3pumDtkw9GHrrDfd7ZnWpU.woff) format('woff');
+}
+@font-face {
+	font-family: 'Josefin Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Josefin Sans Bold Italic'), local('JosefinSans-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v3/ppse0J9fKSaoxCIIJb33G70qgHI2SEqiJszC-CVc3gY.woff) format('woff');
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Lato Bold'), local('Lato-Bold'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Lato Italic'), local('Lato-Italic'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/oUan5VrEkpzIazlUe5ieaA.woff) format('woff');
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/HkF_qI1x_noxlxhrhMQYED8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+html * {
+  color-profile: sRGB;
+  rendering-intent: auto;
+}
+
+body {
+  background: #f7f2d3;
+/*
+  background: -moz-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #f7f2d3));
+  background: -webkit-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  background: -o-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  background: -ms-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  background: radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+*/
+  background-color: #f7f3de; }
+
+.site {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  word-spacing:3px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #333;
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+code {
+    word-spacing:0px;
+}
+
+::selection {
+  color: white;
+  background: rgba(79, 64, 28, 0.99);
+  text-shadow: none; }
+  
+/*body {
+  background-color: #FFF;
+  font: 13.34px Helvetica, Arial, sans-serif;
+  font-size: small;
+  text-align: center;
+}*/
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.site h1,
+.site h2,
+.site h3,
+.site h4,
+.site h5,
+.site h6 {
+  margin: 20px 0 20px 0;
+  color: #333;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1;
+  text-transform: none;
+  text-shadow: none; }
+
+.site h1 {
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.2);}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.site a:not(.image) {
+  color: #268bd2;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.site a:not(.image):hover {
+  color: #78b9e6;
+  text-shadow: none;
+  border: none; }
+
+.site .roll span:after {
+  color: #fff;
+  background: #1a6091; }
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+ul.posts li {
+  line-height: 1.75em;
+}
+
+ul.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+/*
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 42em;
+  margin: 3em auto 2em;
+  line-height: 1.5em;
+}
+
+.site .header a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site .header h1.title {
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+.site .header h1.title a {
+  color: #a00;
+}
+
+.site .header h1.title a:hover {
+  color: #000;
+}
+
+.site .header a.extra {
+  color: #aaa;
+  margin-left: 1em;
+}
+
+.site .header a.extra:hover {
+  color: #000;
+}
+
+.site .meta {
+  color: #aaa;
+}
+
+.site .footer {
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.site .footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+
+.site .footer .contact a {
+  color: #8085C1;
+}
+
+.site .footer .rss {
+  margin-top: 1.1em;
+  margin-right: -.2em;
+  float: right;
+}
+
+.site .footer .rss img {
+  border: 0;
+}*/
+
+.site .header {
+  font-size: 80%;
+  border-bottom: 4px solid #333;
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
+.site .footer {
+  font-size: 80%;
+  border-top: 4px solid #333;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+
+/*****************************************************************************/
+/*
+/* TD
+/*
+/*****************************************************************************/
+
+.course {
+}
+
+.course h1 {
+}
+
+.course .content h1,
+.course .content h2,
+.course .content h3,
+.course .content h4,
+.course .content h5,
+.course .content h6 {
+  font-weight: lighter;
+}
+.course .content h2,
+.course .content h3,
+.course .content h4,
+.course .content h5,
+.course .content h6 {
+  margin: 10px 0 10px 0;
+}
+
+.course .content code {
+    color: #666;
+    font-weight: bold;
+}

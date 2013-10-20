@@ -1,0 +1,12 @@
+{
+	"name": "td_imac",
+	"description": "An example project skeleton",
+	"homepage": "http://example.org",
+	"copyright": "Copyright © 2013, Guillaume Chatelet",
+	"authors": [
+		"Guillaume Chatelet"
+	],
+	"dependencies": {
+		"vibe-d": ">=0.7.16"
+	}
+}

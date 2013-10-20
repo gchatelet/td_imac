@@ -1,0 +1,1 @@
+Le but de ce TD est d'utiliser les notions vues jusqu'alors dans un petit projet ludique.

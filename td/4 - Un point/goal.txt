@@ -1,0 +1,1 @@
+ Ce TD a pour but d’introduire le concept d’objet en C++. Les étudiants apprendront à écrire une classe et à la tester.

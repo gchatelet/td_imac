@@ -1,0 +1,27 @@
+extends layout
+
+block body
+	.course
+		h1.title != variables["title"]
+		div.goal
+			- auto goal = variables["goal"];
+			b Objectif du TD :
+			|!= goal
+			
+		.content
+			ol
+				- foreach(i, section; sections)
+					- auto var = section.variables;
+					li
+						a(id="#{i+1}")
+						h1 != var["title"]
+						- if( "goal" in var )
+							h2 Objectifs : 
+								|!= var["goal"]
+						- if( "notions" in var )
+							h3 Notions : 
+								|!= var["notions"]
+						- if( "note" in var )
+							b Rappel : 
+							|!= var["note"]
+						!= section.render()

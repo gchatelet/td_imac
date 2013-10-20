@@ -1,0 +1,4 @@
+---
+goal:Créer une classe représentant une particule et permettant de gérer son mouvement.
+notions:struct, class, référence, construction, variables et fonctions membres.
+---

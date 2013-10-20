@@ -1,0 +1,25 @@
+!!! 5
+html
+	head
+		link(rel="stylesheet", href="/main.css")
+
+		script(src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full")
+
+		link(rel="stylesheet", href="/highlight.js/styles/tomorrow-night.css")
+		script(src="/highlight.js/highlight.pack.js")
+		script hljs.initHighlightingOnLoad()
+		
+	body
+		div.site
+			div.header
+				h1.title
+					a(href="/")TD IMAC 2ème années
+			
+			block body
+			
+			div.footer
+				div.contact
+					p	Guillaume Chatelet
+						br Software Engineer Google
+						br
+						a(href="mailto:chatelet.guillaume@gmail.com") chatelet.guillaume@gmail.com

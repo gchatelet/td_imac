@@ -1,0 +1,1 @@
+Ce TD a pour but de remémorer aux étudiants leurs notions de programmation C afin de les préparer à l'étude du langage C++. Ils y reverront la chaîne de compilation, les fonctions, les constructions conditionnelles et itératives, l'allocation dynamique et les structures.

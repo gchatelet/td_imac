@@ -1,0 +1,1 @@
+Ce TD a pour but de faciliter la transition du C au C++ en mettant l’accent sur les changements et les ajouts syntaxiques. L’étudiant y verra notamment comment compiler un programme C++ et les nouvelles fonctions de gestion de la mémoire. TD à faire en binôme et à terminer entièrement.
