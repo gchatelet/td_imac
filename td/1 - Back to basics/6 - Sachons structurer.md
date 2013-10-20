@@ -1,4 +1,4 @@
---- 
+---
 goal:Reprendre contact avec les structures.
 notions:struct
 ---
