@@ -22,8 +22,8 @@ Il est absolument nécessaire de tester le code que l'on écrit. Des bugs peuven
 		find_package (Threads) # gtest a besoin de pthread
 		include_directories(SYSTEM ${GTEST_DIR}/include)
 		include_directories(${GTEST_DIR})
-		add_library(gtest ${GTEST_DIR}/src/gtest-all.cc) # librairie
-		add_library(gtest_main ${GTEST_DIR}/src/gtest_main.cc) # 'main'
+		add_library(gtest ${GTEST_DIR}/src/gtest-all.cc) # gtest - librairie
+		add_library(gtest_main ${GTEST_DIR}/src/gtest_main.cc) # gtest - 'main'
 		
 		## Compilation des tests
 		# executable pour lancer les tests
