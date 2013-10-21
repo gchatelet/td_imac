@@ -4,7 +4,7 @@ goal:Découvrir les tests unitaires. Introduction à gtest.
 Il est absolument nécessaire de tester le code que l'on écrit. Des bugs peuvent êtres introduits par des modifications ultérieures ou des cas particuliers peuvent engendrer des résultats incohérents.
  - Télécharger [Google Test](https://code.google.com/p/googletest/)
  - Décompressez le code source `~/gtest`
- - Modifiez votre fichier CMakeList.txt
+ - Modifiez votre fichier CMakeLists.txt
 
 
 		cmake_minimum_required (VERSION 2.8)
