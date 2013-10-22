@@ -26,10 +26,14 @@ void showHome(HTTPServerRequest req, HTTPServerResponse res) {
 
 shared static this()
 {
+	const string urlBase = "/td_imac";
+	
 	auto router = new URLRouter;
-	router.get("*", serveStaticFiles("public"));
-	router.get("/:page", &showChapter);
-	router.get("/", &showHome);
+	
+	auto fileSettings = new HTTPFileServerSettings(urlBase);
+	router.get(urlBase~"/*", serveStaticFiles("public", fileSettings));
+	router.get(urlBase~"/:page", &showChapter);
+	router.get(urlBase~"/", &showHome);
 
 	auto settings = new HTTPServerSettings;
 	settings.port = 8080;

@@ -1,19 +1,20 @@
 !!! 5
 html
+	- const string urlBase = "/td_imac";
 	head
-		link(rel="stylesheet", href="/main.css")
+		link(rel="stylesheet", href="#{urlBase}/main.css")
 
 		script(src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full")
 
-		link(rel="stylesheet", href="/highlight.js/styles/tomorrow-night.css")
-		script(src="/highlight.js/highlight.pack.js")
+		link(rel="stylesheet", href="#{urlBase}/highlight.js/styles/tomorrow-night.css")
+		script(src="#{urlBase}/highlight.js/highlight.pack.js")
 		script hljs.initHighlightingOnLoad()
 		
 	body
 		div.site
 			div.header
 				h1.title
-					a(href="/")TD IMAC 2ème années
+					a(href="#{urlBase}/")TD IMAC 2ème années
 			
 			block body
 			

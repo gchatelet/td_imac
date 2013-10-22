@@ -8,5 +8,5 @@ block body
 			- foreach(i, chapter; chapters)
 				- auto title = chapter.variables["title"];
 				li
-					a(href='/#{i+1}') != title
+					a(href='#{urlBase}/#{i+1}') != title
 					
