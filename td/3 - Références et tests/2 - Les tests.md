@@ -4,7 +4,7 @@ goal:Découvrir les tests unitaires. Introduction à gtest.
 Il est absolument nécessaire de tester le code que l'on écrit. Des bugs peuvent êtres introduits par des modifications ultérieures ou des cas particuliers peuvent engendrer des résultats incohérents.
  - Télécharger [Google Test](https://code.google.com/p/googletest/)
  - Décompressez le code source `~/gtest`
- - Modifiez votre fichier CMakeList.txt
+ - Modifiez votre fichier CMakeLists.txt
 
 
 		cmake_minimum_required (VERSION 2.8)
@@ -22,8 +22,8 @@ Il est absolument nécessaire de tester le code que l'on écrit. Des bugs peuven
 		find_package (Threads) # gtest a besoin de pthread
 		include_directories(SYSTEM ${GTEST_DIR}/include)
 		include_directories(${GTEST_DIR})
-		add_library(gtest ${GTEST_DIR}/src/gtest-all.cc) # librairie
-		add_library(gtest_main ${GTEST_DIR}/src/gtest_main.cc) # 'main'
+		add_library(gtest ${GTEST_DIR}/src/gtest-all.cc) # gtest - librairie
+		add_library(gtest_main ${GTEST_DIR}/src/gtest_main.cc) # gtest - 'main'
 		
 		## Compilation des tests
 		# executable pour lancer les tests
