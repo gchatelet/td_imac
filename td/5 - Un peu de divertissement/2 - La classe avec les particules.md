@@ -6,7 +6,7 @@ Cette classe doit avoir deux variables membres : une position `pos` et une vélo
 
 **Questions**
 - Cette classe possède-t-elle un état qu'il faut protéger ?
-- Cette classe doit-elle être étendu par d'autre classes ? (polymorphisme)
+- Cette classe doit-elle être étendue par d'autre classes ? (polymorphisme)
 - Finalement cette classe doit-elle être une `class` ou une `struct` ?
 
 **A faire**
