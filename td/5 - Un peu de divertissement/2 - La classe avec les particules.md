@@ -12,8 +12,8 @@ Cette classe doit avoir deux variables membres : une position `pos` et une vélo
 **A faire**
 - Dotez cette classe de fonctions `UpdateEuler` et `UpdateVerlet` - adaptez les signatures pour utiliser la vélocité et la position de la particule.
 - Ajoutez quelques tests, par exemple :
-    - la position et la vitesse doivent rester constantes si dt=0.
-    - faire dt=1 puis dt=-1 devrait revenir au même emplacement.
+    - la position et la vitesse doivent rester constantes si `dt`=0.
+    - faire `dt`=1 puis `dt`=-1 devrait revenir au même emplacement.
 - Ajoutez une fonction `void KeepInBox()` qui empêche la particule de sortir de l'espace [0,1]².
     - pour ce faire vous inverserez la composante de la vitesse qui ferait sortir la particule.
 - Ajoutez quelques tests pour vérifiez le comportement.
