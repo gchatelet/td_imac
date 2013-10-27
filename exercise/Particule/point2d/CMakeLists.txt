@@ -1,0 +1,1 @@
+add_library(point2d Point2D.hpp Point2D.cpp)
