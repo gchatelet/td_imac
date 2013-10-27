@@ -13,7 +13,7 @@ ConsoleScreen::ConsoleScreen(unsigned width, unsigned height) :
     const size_t pixels = realWidth * m_Height;
     m_BlankScreen.resize(pixels);
     m_Screen.resize(pixels);
-    fill(begin(m_Screen), end(m_Screen), ' ');
+    fill(m_Screen.begin(), m_Screen.end(), ' ');
     for (unsigned i = 0; i < m_Height; ++i)
         pixel(width, i) = '\n';
     pixel(width, height - 1) = '\0';
@@ -43,7 +43,7 @@ void ConsoleScreen::setPixelRelative(const float x, const float y, const char c)
 }
 
 void ConsoleScreen::clear() {
-    copy(begin(m_BlankScreen), end(m_BlankScreen), begin(m_Screen));
+    copy(m_BlankScreen.begin(), m_BlankScreen.end(), m_Screen.begin());
 }
 
 void ConsoleScreen::show() {
