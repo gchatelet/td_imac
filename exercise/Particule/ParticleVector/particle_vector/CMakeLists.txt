@@ -1,0 +1,2 @@
+add_library(particle_vector ParticleVector.hpp ParticleVector.cpp)
+target_link_libraries(particle_vector particle point2d)
