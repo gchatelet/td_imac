@@ -30,6 +30,10 @@ Créer une classe `ParticleVector` qui permette de faire passer les tests unitai
 		ASSERT_THROW(particles[1], std::range_error);
 	}
 
+**NB**
+Il s'agit de faire passer les tests sans modification.
+Si les tests ne passent pas : c'est votre code qu'il faut changer, pas les tests !
+
 **Questions**
 - Quelles seront les variables membres de la classe ? Ses méthodes ?
 - Cette classe doit elle être une `class` ou une `struct` ?
