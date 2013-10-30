@@ -4,7 +4,7 @@ notions: Révision de la surcharge d'opérateurs, du passage par référence et 
 ---
 Créer une classe `ParticleVector` qui permette de faire passer les tests unitaires suivants :
 
-	TEST(ParticleVector, EmptyConstruction) {
+	TEST(ParticleVector, Construction) {
 		ParticleVector particles(0);
 		EXPECT_EQ(particles.size(), 0);
 	}
