@@ -13,7 +13,7 @@ Point2D rand_point2d() {
     return Point2D(randf(), randf());
 }
 Particle rand_particle() {
-    return Particle(rand_point2d(), rand_point2d());
+    return Particle(rand_point2d(), rand_point2d() - Point2D(.5,.5));
 }
 
 int main(int argc, char **argv) {
@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
         particles[i] = rand_particle();
     }
 
-    ConsoleScreen console(80, 20);
+    ConsoleScreen console(60, 30);
     for (;;) {
         for (size_t i = 0; i < particles.size(); ++i) {
             Particle& particle = particles[i];
