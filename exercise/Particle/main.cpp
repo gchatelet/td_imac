@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
     Particle euler(initialPos, initialVel);
     Particle verlet(initialPos, initialVel);
 
-    ConsoleScreen console(80, 20);
+    ConsoleScreen console(40, 20);
     for (;;) {
         console.setPixelRelative(euler.pos.x, euler.pos.y, 'E');
         console.setPixelRelative(verlet.pos.x, verlet.pos.y, 'V');

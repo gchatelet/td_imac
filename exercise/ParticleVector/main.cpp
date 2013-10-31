@@ -21,13 +21,13 @@ int main(int argc, char **argv) {
     const Point2D gravity(0, -9.81);
     const Point2D initialPos(0.5, 0.5);
     const Point2D initialVel(1, 3);
-    ParticleVector particles(20);
+    ParticleVector particles(10);
 
     for (size_t i = 0; i < particles.size(); ++i) {
         particles[i] = rand_particle();
     }
 
-    ConsoleScreen console(60, 30);
+    ConsoleScreen console(40, 20);
     for (;;) {
         for (size_t i = 0; i < particles.size(); ++i) {
             Particle& particle = particles[i];
