@@ -24,11 +24,6 @@ Créer une classe `ParticleVector` qui permette de faire passer les tests unitai
 		Particle other(particles[0]);
 		EXPECT_EQ(other, Particle());
 	}
-    
-	TEST(ParticleVector, AccessingBadElement) {
-		ParticleVector particles(1);
-		ASSERT_THROW(particles[1], std::range_error);
-	}
 
 **NB**
 Il s'agit de faire passer les tests sans modification.
