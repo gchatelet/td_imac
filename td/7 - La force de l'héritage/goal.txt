@@ -1,0 +1,1 @@
+Découvrir les interfaces, l'héritage, les fonctions virtuelles, virtuelles pures.
