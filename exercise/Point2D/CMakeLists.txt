@@ -1,17 +1,12 @@
 cmake_minimum_required (VERSION 2.8)
-project (Particule)
+project (Point2D)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-
-add_subdirectory(point2d)
-add_subdirectory(particle)
-add_subdirectory(force)
-add_subdirectory(integrator)
-add_subdirectory(console)
+## Compilation du programme
+add_library(point_lib Point2D.cpp) # la lib pour les tests et le programme
 
 # programme main qui link avec la librairie
 add_executable(main main.cpp)
-target_link_libraries(main point2d particle force console integrator)
+target_link_libraries(main point_lib)
 
 ## Compilation de gtest
 set(GTEST_DIR ~/gtest) # definition du répertoire de GTEST
@@ -23,8 +18,8 @@ add_library(gtest_main ${GTEST_DIR}/src/gtest_main.cc) # gtest - 'main'
 
 ## Compilation des tests
 # executable pour lancer les tests
-file(GLOB_RECURSE ALL_TEST_FILES *Test.cpp)
+file(GLOB ALL_TEST_FILES *Test.cpp)
 add_executable(runAllTests ${ALL_TEST_FILES})
-target_link_libraries(runAllTests point2d particle integrator gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(runAllTests point_lib gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
 ## Lancement automatique des tests après compilation
 add_custom_command(TARGET runAllTests POST_BUILD COMMAND runAllTests)
