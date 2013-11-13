@@ -1,6 +1,6 @@
 ---
 goal:Une première implémentation pour notre interface
-notion:Héritage, polymorphisme
+notions:Héritage, polymorphisme
 ---
 Écrivez une classe `Gravity` qui implémente la méthode `Force::get` et retourne une force contante `Point2D(0, -9.81)`
 

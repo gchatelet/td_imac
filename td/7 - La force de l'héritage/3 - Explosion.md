@@ -1,6 +1,6 @@
 ---
 goal:Une force dépendante du temps
-notion:Héritage, polymorphisme
+notions:Héritage, polymorphisme
 ---
 Écrivez une classe `Explode` qui implémente la méthode `Force::get`.
 La force retournée par cette méthode est appliquée pendant 100ms toutes les 5s dans une direction que vous choisirez. Sa magnitude sera de 60.

@@ -1,6 +1,6 @@
 ---
 goal:Composition des forces
-notion:Design Pattern composite
+notions:Design Pattern composite
 ---
 Écrivez une classe `Composite` qui prendra en paramètre un `std::vector<Force*>` et qui implémente la méthode `Force::get` en retournant la somme des forces.
 
