@@ -48,7 +48,7 @@ int main(int argc, char **argv) {
     forces.push_back(&explode);
     const Composite composite(forces);
 
-    std::vector<Particle> particles(25);
+    std::vector<Particle> particles(5);
 
     const double dt = 0.02;
     double time = 1;
@@ -57,7 +57,7 @@ int main(int argc, char **argv) {
         particles[i] = rand_particle();
     }
 
-    ConsoleScreen console(120, 60);
+    ConsoleScreen console(40, 20);
     for (;; time += dt) {
         for (size_t i = 0; i < particles.size(); ++i) {
             Particle& particle = particles[i];
