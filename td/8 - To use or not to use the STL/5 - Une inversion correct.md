@@ -6,7 +6,7 @@ Notre inversion à l'exercice précédent ne fonctionne pas correctement. En eff
     two   1
     words 1
 
-`std::map` garantit l'unicité des clefs, l'inversion donnerait alors :
+`std::map` comme `std::set` garantit l'unicité des clefs, l'inversion _perdrait_ une valeur et donnerait :
     1     words
 
-Pour permettre l'utilisation de plusieurs clefs identiques vous utiliserez le conteneur `std::multimap`.
+Pour permettre l'utilisation de plusieurs clefs identiques vous utiliserez le conteneur `std::multimap` et afficherez les 10 mots les moins fréquents.
