@@ -1,8 +1,8 @@
 #pragma once
 
-#include "particle/Particle.hpp"
-
 #include <stddef.h>
+
+struct Particle;
 
 class ParticleVector {
 public:
