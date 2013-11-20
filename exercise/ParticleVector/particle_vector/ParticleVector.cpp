@@ -1,5 +1,7 @@
 #include "ParticleVector.hpp"
 
+#include "particle/Particle.hpp"
+
 #include <stdexcept>
 
 ParticleVector::ParticleVector(size_t size) :
@@ -35,7 +37,7 @@ const Particle& ParticleVector::at(size_t at) const {
 }
 
 void ParticleVector::checkAccess(size_t at) const {
-    if (at >= m_Size) throw std::range_error("out of bound exception");
+    if (at >= m_Size) throw std::out_of_range("out of bound exception");
 }
 
 size_t ParticleVector::size() const {
