@@ -1,5 +1,5 @@
 ---
-goal:Iteration sur un conteneur associatif
+goal:Itération sur un conteneur associatif
 notions:iterator, std::map
 ---
 Il s'agit maintenant d'afficher les 10 mots les plus utilisés dans Hamlet, pour ce faire nous allons inverser le tableau associatif précédent. Pour chaque paire mot/fréquence, nous allons insérer une paire fréquence/mot dans un autre tableau associatif.
