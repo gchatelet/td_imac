@@ -3,7 +3,7 @@ goal:Une force dépendante du temps
 notions:Héritage, polymorphisme
 ---
 Écrivez une classe `Explode` qui implémente la méthode `Force::get`.
-La force retournée par cette méthode est appliquée pendant 100ms toutes les 5s dans une direction que vous choisirez. Sa magnitude sera de 60.
+La force retournée par cette méthode est appliquée pendant 100ms toutes les 5s vers la doite, sa magnitude sera de 60.
 
 Vérifiez que la classe fait passer le test suivant :
 
@@ -20,3 +20,6 @@ Vérifiez que la classe fait passer le test suivant :
         // plus de force après 100ms
         EXPECT_EQ(explode.get(Point2D(), 5.101), Point2D());
     }
+
+**Exercice supplémentaire**
+Faites une explosion plus réaliste qui dépend également de la `position` de la particule. Implémentez les tests correspondant.
