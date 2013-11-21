@@ -22,4 +22,5 @@ Vérifiez que la classe fait passer le test suivant :
     }
 
 **Exercice supplémentaire**
+
 Faites une explosion plus réaliste qui dépend également de la `position` de la particule. Implémentez les tests correspondant.
