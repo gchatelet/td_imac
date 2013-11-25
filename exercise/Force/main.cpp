@@ -20,15 +20,16 @@ Particle rand_particle() {
 }
 
 bool keepInRange(float& value, const float min = 0, const float max = 1) {
+    bool touched = false;
     if (value < min) {
         value = min;
-        return true;
+        touched |= true;
     }
     if (value > max) {
         value = max;
-        return true;
+        touched |= true;
     }
-    return false;
+    return touched;
 }
 
 void keepInBox(Particle& particle, const float min = 0, const float max = 1) {
@@ -51,7 +52,7 @@ int main(int argc, char **argv) {
     std::vector<Particle> particles(5);
 
     const double dt = 0.02;
-    double time = 1;
+    double time = 0;
 
     for (size_t i = 0; i < particles.size(); ++i) {
         particles[i] = rand_particle();
