@@ -7,7 +7,7 @@ Insérez tous les éléments du vecteur précédent dans un `std::set<std::strin
 
 **Questions**
  - Combien faut-il de comparaisons pour savoir si un mot en particulier se trouve dans un conteneur associatif ?
-     - lorsque ce conteneur contient 10 mots
+     - lorsque ce conteneur contient 10 mots ?
      - lorsque ce conteneur contient un million de mots ?
      - lorsque ce conteneur contient un milliard de mots ?
  - Quelle est la complexité d'une recherche dans un conteneur associatif en général ?
