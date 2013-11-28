@@ -23,11 +23,11 @@ bool keepInRange(float& value, const float min = 0, const float max = 1) {
     bool touched = false;
     if (value < min) {
         value = min;
-        touched |= true;
+        touched = true;
     }
     if (value > max) {
         value = max;
-        touched |= true;
+        touched = true;
     }
     return touched;
 }
@@ -36,8 +36,8 @@ void keepInBox(Particle& particle, const float min = 0, const float max = 1) {
     const float damping = 0.8;
     Point2D &pos = particle.pos;
     Point2D &vel = particle.vel;
-    if (keepInRange(pos.x, min, max)) vel.x *= -damping;
-    if (keepInRange(pos.y, min, max)) vel.y *= -damping;
+    if (keepInRange(pos.x, min, max))vel.x *= -damping;
+    if (keepInRange(pos.y, min, max))vel.y *= -damping;
 }
 
 int main(int argc, char **argv) {
