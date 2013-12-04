@@ -32,3 +32,5 @@ Les lambdas deviennent extrêmement intéressantes en conjonction avec les [algo
                                               [](int value){ return value>=0 && value<=10; }
                                           );
 
+Notez que l'on peut désormais utiliser `std::begin()` et `std::end()` pour récupérer le début et la fin d'un conteneur.
+Ces fonctions ont également l'avantage de fonctionner avec des tableaux.
