@@ -13,7 +13,7 @@ Le C++ permet de spécialiser des templates, et de définir des implémentations
       const char b_ = isupper(b) ? tolower(b) : b;
       return a_ < b_ ? b_ : a_;
     }
-Dans ce cas `get_max('A', 'z')` affichera `a` le compilateur choisira l'implémentation spécialisée.
+Dans ce cas `get_max('A', 'z')` affichera `z` le compilateur choisira l'implémentation spécialisée.
 
 Nous avons vu dans les cours précédents que si l'on peut calculer le modulo de deux entiers grâce à l'opérateur `%`, il faut utiliser la fonction `fmod` lorsque les opérandes sont de type flottant.
 
