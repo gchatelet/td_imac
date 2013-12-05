@@ -17,8 +17,7 @@ Un `template` - 'patron' en français - est donc un modèle que le compilateur v
       return EXIT_SUCCESS;
     }
 
-* Recopiez ce code et appelez `get_max(2.5, 3)`
-* Expliquez ce qu'il se passe
+* Recopiez ce code et appelez `get_max(2.5, 3)`, que se passe-t-il ?
 * Que pouvez-vous faire pour réparer ?
 
 Une implémentation générique correcte des fonctions `min` et `max` est en fait [particulièrement difficile](http://www.drdobbs.com/generic-min-and-max-redivivus/184403774).
