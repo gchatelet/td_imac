@@ -8,7 +8,7 @@ Créez une structure templatée `Point3D` qui comprendra les opérations suivant
 - constructeur par copie
 - assignation
 - opérateurs binaires avec un scalaire : +, -, *, /
-- opérateurs binaires avec une valeur de même type : +, -, *, /
+- opérateurs binaires avec une valeur de même type : +, -
 - opérateurs unaires !, -
 
 On pourra donc instancier ce `Point3D` avec différents types :
