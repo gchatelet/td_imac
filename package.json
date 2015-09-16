@@ -7,7 +7,7 @@
                 "Guillaume Chatelet"
         ],
         "dependencies": {
-                "vibe-d": "0.7.21-rc.4"
+                "vibe-d": "~>0.7.23"
         },
         "versions": [
                 "VibeDefaultMain"
